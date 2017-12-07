@@ -9,11 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Accueil">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccueilSeries" />
+        <activity android:name=".Exercice" />
+        <activity android:name=".ExerciceCorrection" />
+        <activity android:name=".transitionCorrection" />
+        <activity android:name=".Translator" />
+        <!--<activity android:name=".CreditFragment" />
+        <activity android:name=".BaseFragment"></activity>-->
+
+        <!-- Napply widget -->
+        <receiver android:name="NapplyWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.ha501914.anglais_cm2.SHOW_NOTIFICATION" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/napply_widget_meta" />
+        </receiver>
+
+        <!-- Configure activity -->
+        <activity android:name="WidgetConfigure" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
     </application>
