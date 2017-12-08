@@ -222,18 +222,18 @@ public class GestionnaireQuestion {
     public ArrayList<Question> getSerieQuestion(String cmpt, String serie){
         if(cmpt.equals("competence1")){
             switch (serie){
-                case "serie1":
+                case "facile":
                     return this.Cmpt1Serie1;
-                case "serie2":
+                case "moyan":
                     return  this.Cmpt1Serie2;
-                case "serie3":
+                case "difficile":
                     return  this.Cmpt1Serie3;
                 default:
                     return new ArrayList<Question>();
             }
         }
         else if(cmpt.equals("competence2")){
-            switch (serie){
+            /*switch (serie){
                 case "serie1":
                     return this.Cmpt2Serie1;
                 case "serie2":
@@ -242,7 +242,8 @@ public class GestionnaireQuestion {
                     return  this.Cmpt2Serie3;
                 default:
                     return new ArrayList<Question>();
-            }
+            }*/
+            return new ArrayList<Question>();
         }
         else{
             return new ArrayList<Question>();

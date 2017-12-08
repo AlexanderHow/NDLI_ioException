@@ -23,23 +23,22 @@ public class Accueil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
 
-        Button cmpt1 =(Button)findViewById(R.id.competence1);
+        Button cmpt1 =(Button)findViewById(R.id.tipsCours);
         cmpt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Accueil.this,AccueilSeries.class);
-                intent.putExtra("competence","competence1");
+                Intent intent = new Intent(Accueil.this,TipsEtCours.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-        Button cmpt2 =(Button)findViewById(R.id.competence2);
+        Button cmpt2 =(Button)findViewById(R.id.activites);
         cmpt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this,AccueilSeries.class);
-                intent.putExtra("competence","competence2");
+                intent.putExtra("competence","competence1");
                 startActivity(intent);
                 finish();
             }
@@ -55,34 +54,14 @@ public class Accueil extends AppCompatActivity {
             }
         });
 
-        Button wiwi =(Button)findViewById(R.id.widgetCustom);
-        wiwi.setOnClickListener(new View.OnClickListener() {
+        Button wiwi =(Button)findViewById(R.id.urgenceCall); //TODO
+        /*wiwi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this,WidgetConfigure.class);
                 intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,1);
                 startActivity(intent);
 
-            }
-        });
-
-
-
-        //Failed fragment
-        /*Fragment newFrag = new BaseFragment();
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.frag_layout, newFrag);
-        transaction.commit();
-
-        Button credits =(Button)findViewById(R.id.credits);
-        credits.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment frag = new CreditFragment();
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.frag_layout, frag);
-                transaction.addToBackStack(null);
-                transaction.commit();
             }
         });*/
 
