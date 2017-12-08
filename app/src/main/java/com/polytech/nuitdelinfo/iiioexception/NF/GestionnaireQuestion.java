@@ -13,9 +13,9 @@ public class GestionnaireQuestion {
     private ArrayList<Question> Cmpt1Serie1=new ArrayList<Question>();
     private ArrayList<Question> Cmpt1Serie2=new ArrayList<Question>();
     private ArrayList<Question> Cmpt1Serie3=new ArrayList<Question>();
-    private ArrayList<Question> Cmpt2Serie1=new ArrayList<Question>();
+    /*private ArrayList<Question> Cmpt2Serie1=new ArrayList<Question>();
     private ArrayList<Question> Cmpt2Serie2=new ArrayList<Question>();
-    private ArrayList<Question> Cmpt2Serie3=new ArrayList<Question>();
+    private ArrayList<Question> Cmpt2Serie3=new ArrayList<Question>();*/
 
     //Hash map pour garder la reponse donné pour chaque question fausse
     private HashMap<Question, Reponse> erreurs = new HashMap<Question, Reponse>();
@@ -32,97 +32,97 @@ public class GestionnaireQuestion {
      */
     private void construireSeriesQuestion(){
         //construction de nos exercices c'est long...
-        Reponse reponse1_1_1 = new Reponse("Hello","Hello est la manière la plus simple de dire 'Bonjour'.");
-        this.Cmpt1Serie1.add(new Question("Que dis tu quand tu rencontres quelqu'un?", reponse1_1_1));
+        Reponse reponse1_1_1 = new Reponse("50 km/h","C'est juqte ce qu'il faut pour bien réagir");
+        this.Cmpt1Serie1.add(new Question("Quelle est la vitesse max en agglomeration ?", reponse1_1_1));
 
-        Reponse reponse1_1_2 = new Reponse("My name is","Tout simplement 'Mon nom est'.");
-        this.Cmpt1Serie1.add(new Question("Pour donner ton nom tu dis?", reponse1_1_2));
+        Reponse reponse1_1_2 = new Reponse("Oui","Si t'as pas envie de finir dans le parbrise vaut mieux la mettre");
+        this.Cmpt1Serie1.add(new Question("Doit on attacher sa ceinture ?", reponse1_1_2));
 
-        Reponse reponse1_1_3 = new Reponse("I am 10 years old","En anglais on utilise le verbe être pour l'age.");
-        this.Cmpt1Serie1.add(new Question("Pour donner ton age tu dis?", reponse1_1_3));
+        Reponse reponse1_1_3 = new Reponse("L'un mais pas l'autre","Boire et conduire ca fait pas bon ménage");
+        this.Cmpt1Serie1.add(new Question("Boire ou conduire ?", reponse1_1_3));
 
-        Reponse reponse1_1_4 = new Reponse("I was born in","Tu utilises le passé 'was' car cet événement a déjà eu lieu.");
-        this.Cmpt1Serie1.add(new Question("Pour dire où tu es né tu dis?", reponse1_1_4));
+        Reponse reponse1_1_4 = new Reponse("A droite","Surveilles bien ta droite aux intersections");
+        this.Cmpt1Serie1.add(new Question("De quel côté est la prio en l'absence de panneau?", reponse1_1_4));
 
-        Reponse reponse1_1_5 = new Reponse("Nice to meet you","'Nice to meet you' signifie 'Heureux de te rencontrer'.");
-        this.Cmpt1Serie1.add(new Question("Comment dis tu 'Heureux de te rencontrer?'", reponse1_1_5));
+        Reponse reponse1_1_5 = new Reponse("M'arrête","Rouge STOP, vert PASSER");
+        this.Cmpt1Serie1.add(new Question("Au feu rouge je...?", reponse1_1_5));
 
-        Reponse reponse1_1_6 = new Reponse("I am 130cm","Tu utilises le verbe être pour donner ta taille.");
-        this.Cmpt1Serie1.add(new Question("Pour donner ta taille?", reponse1_1_6));
+        Reponse reponse1_1_6 = new Reponse("Avant","Mieux vaut prévenir que guérir");
+        this.Cmpt1Serie1.add(new Question("Le clignotant avant ou pendant le virage?", reponse1_1_6));
 
-        Reponse reponse1_1_7 = new Reponse("I am playing an instrument","Tu utilises la forme be + ing pour parler de tes hobbies.");
-        this.Cmpt1Serie1.add(new Question("Pour dire que tu joues d'un instrument tu dis?", reponse1_1_7));
+        Reponse reponse1_1_7 = new Reponse("Non","Garde ton calme, les nerveux meurent plus vite");
+        this.Cmpt1Serie1.add(new Question("Il t'a fait un queue de poisson tu l'insulte?", reponse1_1_7));
 
-        Reponse reponse1_1_8 = new Reponse("I live in","Pour parler d'un lieu on utilise 'in'.");
-        this.Cmpt1Serie1.add(new Question("Comment tu dis où tu habites?", reponse1_1_8));
+        Reponse reponse1_1_8 = new Reponse("A droite","L'autre sens serait risqué");
+        this.Cmpt1Serie1.add(new Question("On roule de quel côté ?", reponse1_1_8));
 
-        Reponse reponse1_1_9 = new Reponse("I have one brother, and two sisters","'Have' signifie avoir. N'oublies pas le 's' à 'sisters'.");
-        this.Cmpt1Serie1.add(new Question("Comment dis tu que tu as un frère et deux soeurs?", reponse1_1_9));
+        Reponse reponse1_1_9 = new Reponse("A gauche","Vous le surprendriez si vous le doubliez par la droite");
+        this.Cmpt1Serie1.add(new Question("On double de quel côté ?", reponse1_1_9));
 
-        Reponse reponse1_1_10 = new Reponse("Bye","'Bye' est une façon simple de dire au revoir.");
-        this.Cmpt1Serie1.add(new Question("Comment dis tu au revoir?", reponse1_1_10));
+        Reponse reponse1_1_10 = new Reponse("Interdit","Stay focus on the road bro");
+        this.Cmpt1Serie1.add(new Question("Le telephone au volant ?", reponse1_1_10));
 
-        Reponse reponse1_2_1 = new Reponse("Ton age","'How old are you?' signifie 'Quel age as tu?'.");
-        this.Cmpt1Serie2.add(new Question("'How old are you?' Te demandes", reponse1_2_1));
+        Reponse reponse1_2_1 = new Reponse("croisement","Pour etre vu et ne pas aveugler");
+        this.Cmpt1Serie2.add(new Question("En croisement j'utilise les feux de...?", reponse1_2_1));
 
-        Reponse reponse1_2_2 = new Reponse("Où tu te situes","'Where are you?' signifie 'Où es tu?'.");
-        this.Cmpt1Serie2.add(new Question("'Where are you?' Te demandes", reponse1_2_2));
+        Reponse reponse1_2_2 = new Reponse("Une technique pour tourner","Faut faire chevaucher nos mains rapidement pour tourner plus");
+        this.Cmpt1Serie2.add(new Question("Qu'est ce que le chevauchement ?", reponse1_2_2));
 
-        Reponse reponse1_2_3 = new Reponse("Comment tu vas","'How are you?' signifie 'Comment vas tu?'.");
-        this.Cmpt1Serie2.add(new Question("'How are you?' Te demandes", reponse1_2_3));
+        Reponse reponse1_2_3 = new Reponse("50, voire moins","Prudence est mère de sureté");
+        this.Cmpt1Serie2.add(new Question("C'est limité a 50 je roule a combien ?", reponse1_2_3));
 
-        Reponse reponse1_2_4 = new Reponse("Combien","'How many?' signifie 'Combien?'.");
-        this.Cmpt1Serie2.add(new Question("'How many?' Te demandes", reponse1_2_4));
+        Reponse reponse1_2_4 = new Reponse("2","Un mississipi... deux mississipi");
+        this.Cmpt1Serie2.add(new Question("Nombre de secondes d'intervalle de sécurité", reponse1_2_4));
 
-        Reponse reponse1_2_5 = new Reponse("Quel est l'heure","'What time is it?' signifie 'Quelle heure est-il?'.");
-        this.Cmpt1Serie2.add(new Question("'What time is it?' Te demandes", reponse1_2_5));
+        Reponse reponse1_2_5 = new Reponse("Non","Attention au bloquage dans les pédales");
+        this.Cmpt1Serie2.add(new Question("Peux tu porter des tong en conduisant ?", reponse1_2_5));
 
-        Reponse reponse1_2_6 = new Reponse("Que fais tu","'What are you doing?' signifie 'Que fais tu?'.");
-        this.Cmpt1Serie2.add(new Question("'What are you doing?' Te demandes", reponse1_2_6));
+        Reponse reponse1_2_6 = new Reponse("Non","On entend moins ce qui nous entoure");
+        this.Cmpt1Serie2.add(new Question("As tu le droit d'écouter ta musique avec des écouteurs en conduisant", reponse1_2_6));
 
-        Reponse reponse1_2_7 = new Reponse("La couleur du ciel","'What colour is the sky?' signifie 'De quelle couleur est le ciel?'");
-        this.Cmpt1Serie2.add(new Question("'What colour is the sky?' Te demandes", reponse1_2_7));
+        Reponse reponse1_2_7 = new Reponse("5/10","Bien voir pour bien conduire");
+        this.Cmpt1Serie2.add(new Question("Acuité visuelle minimale a chaque oeil ?", reponse1_2_7));
 
-        Reponse reponse1_2_8 = new Reponse("L'endroit où tu vis","'Where do you live ?' signifie 'Où vie tu?'.");
-        this.Cmpt1Serie2.add(new Question("'Where do you live?' Te demandes", reponse1_2_8));
+        Reponse reponse1_2_8 = new Reponse("A droite","On utilise le meme pied pour accélerateur et frein");
+        this.Cmpt1Serie2.add(new Question("L'accélerateur est... ?", reponse1_2_8));
 
-        Reponse reponse1_2_9 = new Reponse("A tu un frère","'Do you have a brother?' signifie 'As tu un frère?'.");
-        this.Cmpt1Serie2.add(new Question("'Do you have a brother?' Te demandes", reponse1_2_9));
+        Reponse reponse1_2_9 = new Reponse("Au milieu","On utilise le meme pied pour accélerateur et frein");
+        this.Cmpt1Serie2.add(new Question("Le frein est...?", reponse1_2_9));
 
-        Reponse reponse1_2_10 = new Reponse("Quel est le nom de ta mère","'What is the name of your mom?' signifie 'Quel est le nom de ta mère?'");
-        this.Cmpt1Serie2.add(new Question("'What is the name of your mom?' Te demandes", reponse1_2_10));
+        Reponse reponse1_2_10 = new Reponse("Appuyer sur l'embrayage","On DEtache le liaison entre les roues et le moteur");
+        this.Cmpt1Serie2.add(new Question("Débrayer c'est...?", reponse1_2_10));
 
-        Reponse reponse1_3_1 = new Reponse("What time is it?","'What time is it?' signifie 'Quel heure est il?'.");
-        this.Cmpt1Serie3.add(new Question("Comment demandes tu l'heure?", reponse1_3_1));
+        Reponse reponse1_3_1 = new Reponse("Relacher l'embrayage","On EMboite la liaison entre les roues et le moteur");
+        this.Cmpt1Serie3.add(new Question("Embrayer c'est...?", reponse1_3_1));
 
-        Reponse reponse1_3_2 = new Reponse("What's the weather like?","'What's the weather like?' signifie 'Comment est le temps?'.");
-        this.Cmpt1Serie3.add(new Question("'Comment demandes tu le temps qu'il fait?' Te demandes", reponse1_3_2));
+        Reponse reponse1_3_2 = new Reponse("2 heures","Conduire c'est mieux une fois reposé");
+        this.Cmpt1Serie3.add(new Question("On fait généralement une pause toutes les... ?", reponse1_3_2));
 
-        Reponse reponse1_3_3 = new Reponse("Can I go to the bathroom?","'Il existe plusieurs mots pour remplacer Can est rendre la formulation plus polie mais Can est la plus simple.");
-        this.Cmpt1Serie3.add(new Question("'Comment demandes tu d'aller aux toilettes?", reponse1_3_3));
+        Reponse reponse1_3_3 = new Reponse("Zero","Quepouick, quedal");
+        this.Cmpt1Serie3.add(new Question("Quelle est la quantité max d'alcool autorisé dans le sang en tant qu'apprenti ?", reponse1_3_3));
 
-        Reponse reponse1_3_4 = new Reponse("How much?","Attention de pas confondre many (non quantifiable) et much (quantifiable).");
-        this.Cmpt1Serie3.add(new Question("'Comment demandes tu un prix?", reponse1_3_4));
+        Reponse reponse1_3_4 = new Reponse("50m","Faut prévenir ceux qui arrivent");
+        this.Cmpt1Serie3.add(new Question("A quelle distance on met le triangle de signalisation en cas d'accident ?", reponse1_3_4));
 
-        Reponse reponse1_3_5 = new Reponse("What time is it?","'What time is it?' signifie 'Quelle heure est-il?'.");
-        this.Cmpt1Serie3.add(new Question("'Comment demandes tu l'heure?' Te demandes", reponse1_3_5));
+        Reponse reponse1_3_5 = new Reponse("A celui qui monte","Le pauvre pour redemarrer c'est difficile");
+        this.Cmpt1Serie3.add(new Question("Priorité a qui dans une montée ?", reponse1_3_5));
 
-        Reponse reponse1_3_6 = new Reponse("How old are you?","'How old are you?' signifie 'Quel age as tu?'.");
-        this.Cmpt1Serie3.add(new Question("'Comment demandes tu l'age de quelqu'un?", reponse1_3_6));
+        Reponse reponse1_3_6 = new Reponse("Oui mais...","C'est toléré mais ne manipule pas ton téléphone en conduisant");
+        this.Cmpt1Serie3.add(new Question("Le kit main libre autorisé ?", reponse1_3_6));
 
-        Reponse reponse1_3_7 = new Reponse("How tall are you?","'How tall are you?' signifie 'Quelle taille fai tu?'.");
-        this.Cmpt1Serie3.add(new Question("Comment demandes tu la taille de quelqu'un?", reponse1_3_7));
+        Reponse reponse1_3_7 = new Reponse("ISSOU, non","Mon pote t'arrive meme pas a ouvrir ta portière");
+        this.Cmpt1Serie3.add(new Question("Un café après la biture de ce soir ca passe ?", reponse1_3_7));
 
-        Reponse reponse1_3_8 = new Reponse("What's your name?","'What's your name?' signifie 'Quel est ton nom?'.");
-        this.Cmpt1Serie3.add(new Question("Comment demandes tu le nom de quelqu'un?", reponse1_3_8));
+        Reponse reponse1_3_8 = new Reponse("Non, ce n'est pas un jeu la conduite","C'est du sérieux");
+        this.Cmpt1Serie3.add(new Question("Une mamie a 100 point je fonce ?", reponse1_3_8));
 
-        Reponse reponse1_3_9 = new Reponse("Do you have a brother?","'Do you have a brother?' signifie 'As tu un frère?'.");
-        this.Cmpt1Serie3.add(new Question("Comment demandes tu à quelqu'un s'il a un frère?", reponse1_3_9));
+        Reponse reponse1_3_9 = new Reponse("2 ans","6points au départ puis 3 par an");
+        this.Cmpt1Serie3.add(new Question("Combien d'années avant tes 12 points en fillière AAC ?", reponse1_3_9));
 
-        Reponse reponse1_3_10 = new Reponse("Where do you come from?","Attention n'oublie pas le From sinon la phrase est fausse.");
-        this.Cmpt1Serie3.add(new Question("Comment demandes tu à quelqu'un d'où il vient?", reponse1_3_10));
+        Reponse reponse1_3_10 = new Reponse("En cas de Brouillard, Neige et/ou Pluie","On te verra mieux ;)");
+        this.Cmpt1Serie3.add(new Question("Quand doit on activer ses phares de brouillard avant?", reponse1_3_10));
 
-        Reponse reponse2_1_1 = new Reponse("Peindre","Paint signifie Peindre");
+        /*Reponse reponse2_1_1 = new Reponse("Peindre","Paint signifie Peindre");
         this.Cmpt2Serie1.add(new Question("Que veux dire Paint", reponse2_1_1));
 
         Reponse reponse2_1_2 = new Reponse("Café","Coffee signifie Café");
@@ -210,7 +210,7 @@ public class GestionnaireQuestion {
         this.Cmpt2Serie3.add(new Question("Comment dire 'Pouvez vous répeter?'?", reponse2_3_9));
 
         Reponse reponse2_3_10 = new Reponse("Let's go","'Let's go' signifie 'Allons y'.");
-        this.Cmpt2Serie3.add(new Question("Comment dire 'Allons y'", reponse2_3_10));
+        this.Cmpt2Serie3.add(new Question("Comment dire 'Allons y'", reponse2_3_10));*/
     }
 
 
@@ -222,18 +222,18 @@ public class GestionnaireQuestion {
     public ArrayList<Question> getSerieQuestion(String cmpt, String serie){
         if(cmpt.equals("competence1")){
             switch (serie){
-                case "serie1":
+                case "facile":
                     return this.Cmpt1Serie1;
-                case "serie2":
+                case "moyan":
                     return  this.Cmpt1Serie2;
-                case "serie3":
+                case "difficile":
                     return  this.Cmpt1Serie3;
                 default:
                     return new ArrayList<Question>();
             }
         }
         else if(cmpt.equals("competence2")){
-            switch (serie){
+            /*switch (serie){
                 case "serie1":
                     return this.Cmpt2Serie1;
                 case "serie2":
@@ -242,7 +242,8 @@ public class GestionnaireQuestion {
                     return  this.Cmpt2Serie3;
                 default:
                     return new ArrayList<Question>();
-            }
+            }*/
+            return new ArrayList<Question>();
         }
         else{
             return new ArrayList<Question>();

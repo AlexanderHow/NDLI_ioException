@@ -36,7 +36,7 @@ public class AccueilSeries extends AppCompatActivity {
         serie1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                extras.putString("serie", "serie1");
+                extras.putString("serie", "facile");
                 intent.putExtras(extras);
                 startActivity(intent);
                 finish();
@@ -47,7 +47,7 @@ public class AccueilSeries extends AppCompatActivity {
         serie2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                extras.putString("serie", "serie2");
+                extras.putString("serie", "moyen");
                 intent.putExtras(extras);
                 startActivity(intent);
                 finish();
@@ -58,7 +58,7 @@ public class AccueilSeries extends AppCompatActivity {
         serie3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                extras.putString("serie", "serie3");
+                extras.putString("serie", "difficile");
                 intent.putExtras(extras);
                 startActivity(intent);
                 finish();
@@ -79,14 +79,14 @@ public class AccueilSeries extends AppCompatActivity {
     public void goodLibelleForButton(String cmpt){
 
         if(cmpt.equals("competence1")){
-            serie1.setText("Présentes toi");
-            serie2.setText("Réponds aux questions");
-            serie3.setText("Poses des questions");
+            serie1.setText("Série facile");
+            serie2.setText("Série moyenne");
+            serie3.setText("Série difficile");
         }
         else if(cmpt.equals("competence2")){
-            serie1.setText("Comprendre des consignes");
-            serie2.setText("Comprendre des mots");
-            serie3.setText("Comprendre des expressions");
+            serie1.setText("autre1");
+            serie2.setText("autre2");
+            serie3.setText("autre3");
         }
     }
 }
