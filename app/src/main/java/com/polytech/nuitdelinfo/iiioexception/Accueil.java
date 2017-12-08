@@ -46,7 +46,7 @@ public class Accueil extends AppCompatActivity {
             }
         });
 
-        ImageButton traducteur =(ImageButton)findViewById(R.id.buttonTrad); //TODO : news
+        ImageButton traducteur =(ImageButton)findViewById(R.id.btnNews); //TODO : news
         traducteur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

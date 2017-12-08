@@ -47,6 +47,10 @@
         <activity android:name=".AnnuaireNumeros" />
         <activity android:name=".ActiviteEtJeux"></activity>
         <activity android:name=".NewsActivity"/>
+
+        <activity android:name=".LabbyGame" />
+        <activity android:name=".Pop" android:theme="@style/AppTheme.CustomTheme"></activity>
+
     </application>
 
 </manifest>
