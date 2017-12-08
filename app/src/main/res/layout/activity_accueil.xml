@@ -12,77 +12,71 @@
     tools:context="com.polytech.nuitdelinfo.iiioexception.Accueil">
 
     <Button
-        android:text="Communication"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
         android:id="@+id/competence1"
         style="@android:style/Widget.Button"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Compréhension"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Communication"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Button
         android:id="@+id/competence2"
         style="@android:style/Widget.Button"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:layout_below="@+id/competence1"
-        android:layout_alignLeft="@+id/competence1"
-        android:layout_alignStart="@+id/competence1"
-        android:layout_marginTop="35dp" />
-
-    <!--<LinearLayout
-        android:orientation="horizontal"
-        android:weightSum="1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/frag_layout">
-
-    </LinearLayout>-->
-
-    <Button
-        android:text="Crédits (off)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:id="@+id/credits" />
+        android:layout_alignStart="@+id/competence1"
+        android:layout_below="@+id/competence1"
+        android:layout_marginTop="34dp"
+        android:text="Compréhension"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
     <ImageButton
+        android:id="@+id/buttonTrad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logotrad"
-        android:id="@+id/buttonTrad"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        app:srcCompat="@drawable/logotrad" />
+
+    <ImageButton
+        android:id="@+id/buttonNumeros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/competence2"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/logotrad" />
+
+    <ImageButton
+        android:id="@+id/buttonCalendarKdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logotrad" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/accueil_img"
         android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="44dp"
+        app:srcCompat="@drawable/accueil_img" />
 
     <Button
-        android:text="Widget"
-        android:layout_width="wrap_content"
+        android:id="@+id/widgetCustom"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/credits"
-        android:layout_toRightOf="@+id/credits"
-        android:layout_toEndOf="@+id/credits"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:id="@+id/widgetCustom" />
+        android:layout_above="@+id/buttonTrad"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:text="APPEL URGENCE"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
 
 </RelativeLayout>
