@@ -40,14 +40,13 @@ public class Accueil extends AppCompatActivity {
         cmpt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Accueil.this,AccueilSeries.class);
-                intent.putExtra("competence","competence1");
+                Intent intent = new Intent(Accueil.this,ActiviteEtJeux.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-        ImageButton traducteur =(ImageButton)findViewById(R.id.buttonTrad);
+        ImageButton traducteur =(ImageButton)findViewById(R.id.buttonTrad); //TODO : news
         traducteur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +56,7 @@ public class Accueil extends AppCompatActivity {
             }
         });
 
-        Button wiwi =(Button)findViewById(R.id.urgenceCall); //TODO
+        Button wiwi =(Button)findViewById(R.id.urgenceCall);
         wiwi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnnuaireNumeros">
+        <activity android:name=".FirstScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,7 +44,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TipsEtCours" />
-
+        <activity android:name=".AnnuaireNumeros" />
+        <activity android:name=".ActiviteEtJeux"></activity>
     </application>
 
 </manifest>
