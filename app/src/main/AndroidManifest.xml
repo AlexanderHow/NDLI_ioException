@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstScreen">
+        <activity android:name=".AnnuaireNumeros">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,6 @@
         <activity android:name=".ExerciceCorrection" />
         <activity android:name=".transitionCorrection" />
         <activity android:name=".Translator" />
-
 
         <!-- Napply widget -->
         <receiver android:name=".NapplyWidget">
@@ -44,7 +43,8 @@
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
-        <activity android:name=".TipsEtCours"></activity>
+        <activity android:name=".TipsEtCours" />
+
     </application>
 
 </manifest>

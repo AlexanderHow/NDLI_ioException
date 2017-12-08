@@ -55,15 +55,24 @@ public class Accueil extends AppCompatActivity {
         });
 
         Button wiwi =(Button)findViewById(R.id.urgenceCall); //TODO
-        /*wiwi.setOnClickListener(new View.OnClickListener() {
+        wiwi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Accueil.this,WidgetConfigure.class);
-                intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,1);
+                //Intent intent = new Intent(Accueil.this,AnnuaireNumeros.class);
+                //startActivity(intent);
+
+            }
+        });
+
+        ImageButton nununu =(ImageButton)findViewById(R.id.buttonNumeros);
+        nununu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Accueil.this,AnnuaireNumeros.class);
                 startActivity(intent);
 
             }
-        });*/
+        });
 
 
     }
