@@ -224,7 +224,7 @@ public class GestionnaireQuestion {
             switch (serie){
                 case "facile":
                     return this.Cmpt1Serie1;
-                case "moyan":
+                case "moyen":
                     return  this.Cmpt1Serie2;
                 case "difficile":
                     return  this.Cmpt1Serie3;
