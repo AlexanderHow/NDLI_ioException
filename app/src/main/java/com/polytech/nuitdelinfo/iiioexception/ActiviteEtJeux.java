@@ -31,9 +31,9 @@ public class ActiviteEtJeux extends AppCompatActivity {
         ethylojej.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent = new Intent(ActiviteEtJeux.this,AccueilSeries.class); //TODO : ethyloJEU théos
+                Intent intent = new Intent(ActiviteEtJeux.this,LabbyGame.class);
                 startActivity(intent);
-                finish();*/
+                finish();
             }
         });
 

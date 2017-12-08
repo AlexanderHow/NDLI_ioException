@@ -72,7 +72,17 @@ public class Accueil extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Accueil.this,AnnuaireNumeros.class);
                 startActivity(intent);
+                finish();
+            }
+        });
 
+        ImageButton zbra =(ImageButton)findViewById(R.id.buttonCalendarKdo);
+        zbra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Accueil.this,Calendar.class);
+                startActivity(intent);
+                finish();
             }
         });
 

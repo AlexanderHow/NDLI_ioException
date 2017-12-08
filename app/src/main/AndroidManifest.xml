@@ -22,6 +22,8 @@
         <activity android:name=".ExerciceCorrection" />
         <activity android:name=".transitionCorrection" />
         <activity android:name=".Translator" />
+        <activity android:name=".Calendar" />
+        <activity android:name=".Fact" />
 
         <!-- Napply widget -->
         <receiver android:name=".NapplyWidget">
