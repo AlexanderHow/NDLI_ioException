@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -14,6 +15,8 @@ import com.polytech.nuitdelinfo.iiioexception.NF.ListCours;
 import com.polytech.nuitdelinfo.iiioexception.NF.ListNumero;
 import com.polytech.nuitdelinfo.iiioexception.NF.Numero;
 import com.polytech.nuitdelinfo.iiioexception.NF.NumeroAdapter;
+import com.polytech.nuitdelinfo.iiioexception.NF.NumeroCourant;
+import com.polytech.nuitdelinfo.iiioexception.NF.Reponse;
 
 
 public class AnnuaireNumeros extends AppCompatActivity {
@@ -28,6 +31,14 @@ public class AnnuaireNumeros extends AppCompatActivity {
         ListNumero listN=new ListNumero();
         NumeroAdapter adapterN=new NumeroAdapter(this, listN);
         listViewNum.setAdapter(adapterN);
+
+        listViewNum.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Numero numSelected=(Numero) parent.getItemAtPosition(position);
+                NumeroCourant.getInstance().setNum(numSelected);
+            }
+        });
 
         ImageButton ib = (ImageButton)findViewById(R.id.backAnnuaire);
         ib.setOnClickListener(new View.OnClickListener() {

@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.polytech.nuitdelinfo.iiioexception.NF.NumeroCourant;
 
 /**
  * Created by Howard Alexandre and Tua Mathieu and Munier Rémy on 16/03/2017.
@@ -58,8 +61,8 @@ public class Accueil extends AppCompatActivity {
         wiwi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(Accueil.this,AnnuaireNumeros.class);
-                //startActivity(intent);
+                Toast t=Toast.makeText(getApplicationContext(),NumeroCourant.getInstance().affichNum(),Toast.LENGTH_LONG);
+                t.show();
 
             }
         });
